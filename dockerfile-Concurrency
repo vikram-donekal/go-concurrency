@@ -1,0 +1,17 @@
+FROM golang
+
+
+
+# create a working directory
+WORKDIR /go/src/app
+
+
+# add source code
+ADD Concurrency Concurrency
+
+
+
+
+
+# run main.go
+CMD ["go", "run", "Concurrency/src/Concurrency.go"]
